@@ -7,7 +7,7 @@ Atom  사용
 
 *** 저장은 ctrl+S키 ***
 
-<!doctype html> -> 관용적 표현
+<!doctype html> ☞ 관용적 표현
 <html>
 <head>
 	<title>제목</title>
@@ -41,3 +41,48 @@ Atom  사용
 
 8. 내용을 없는 셈 처라.
 <!--내용-->
+
+---------------------------------------------
+CSS
+---------------------------------------------
+<!doctype html>
+<html>
+<head>
+	<title>제목</title>
+	<meta charset-"utf-8">
+	<style>
+		css내용
+	</style>
+</head>
+<body>
+	본문
+</body>
+---------------------------------------------
+CSS -> <a></a>에 효과를 줄때
+---------------------------------------------
+<!doctype html>
+<html>
+<head>
+	<title>제목</title>
+	<meta charset-"utf-8">
+	<style>
+		a {                   ☞selector(선택자) : 주고싶은 효과를 누구한테 줄 것인가?
+		color:blue;         ☞declaration(선언) : 주고 싶은 효과   
+		}                          ☞color : red ; => propertly(속성) : value(속성값) ;
+	</style>
+</head>
+<body>
+	<ul>                            	 ┎이곳만적용 ┎red글자색┎글자 꾸미기:밑줄
+	  	<li><a href="2.html" style="color:red; text-decoration: underline;">CSS</a></li>
+		<li><a href="3.html">Javescript</a></li>
+	</ul>
+</body>
+</html>
+---------------------------------------------
+  <style>
+	.saw {color: gray;}
+	#id {color: red;}
+  </style>
+</head>
+<body><ul>
+    <li><a href="2.html" class="saw" id="active">CSS</a></li> ☞id선택자가 class선택자보다 우선 
